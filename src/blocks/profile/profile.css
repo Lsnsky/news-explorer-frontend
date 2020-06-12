@@ -1,0 +1,12 @@
+@import url(./__image/profile__image.css);
+@import url(./__content/profile__content.css);
+@import url(./__title/profile__title.css);
+@import url(./__description/profile__description.css);
+.profile {
+    background: #FFFFFF;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 1440px;
+    margin: 0 auto;
+}

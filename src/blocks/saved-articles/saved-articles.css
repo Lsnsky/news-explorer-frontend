@@ -1,0 +1,7 @@
+@import url(../../vendor/normalize.css);
+@import url(../../vendor/fonts.css);
+@import url(../root/root.css);
+@import url(../header-light/header-light.css);
+@import url(../articles-info/articles-info.css);
+@import url(../cards/cards.css);
+@import url(../footer/footer.css);

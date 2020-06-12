@@ -1,0 +1,17 @@
+.cards__button {
+    background: #FFFFFF;
+    border-radius: 80px;
+    width: 288px;
+    height: 64px;
+    margin: 64px auto 80px;
+    border: none;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 24px;
+    /* display: flex; */
+    /* align-items: center; */
+    /* text-align: center; */
+    color: #1A1B22;
+}

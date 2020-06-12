@@ -1,0 +1,13 @@
+    @import url(./__title/header__title.css);
+    @import url(./__nav/header__nav.css);
+    @import url(./__link/header__link.css);
+    @import url(./__container/header__container.css);
+    @import url(./__link/_active/header__link_active.css);
+    .header {
+        margin: 0 auto;
+        padding: 0;
+        height: 80px;
+        box-shadow: inset 0px -1px 0px rgba(255, 255, 255, 0.2);
+        /* max-width: 2560px;
+        width: 100%; */
+    }

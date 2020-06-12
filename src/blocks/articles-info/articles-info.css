@@ -1,0 +1,11 @@
+@import url(./__title/articles-info__title.css);
+@import url(./__description/articles-info__description.css);
+@import url(./__keywords/articles-info__keywords.css);
+@import url(./__keywords/_bold/articles-info__keywords_bold.css);
+.articles-info {
+    max-width: 1440px;
+    padding: 0 104px;
+    /* height: 294px; */
+    margin: 0 auto;
+    background: #FFFFFF;
+}

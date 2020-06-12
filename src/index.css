@@ -1,0 +1,17 @@
+@import url(./vendor/normalize.css);
+@import url(./vendor/fonts.css);
+@import url(./blocks/root/root.css);
+@import url(./blocks/header/header.css);
+@import url(./blocks/search/search.css);
+@import url(./blocks/cards/cards.css);
+@import url(./blocks/loader/loader.css);
+@import url(./blocks/profile/profile.css);
+@import url(./blocks/footer/footer.css);
+.header,
+.search {
+    margin: 0;
+    background-image: url('./images/georgia-de-lotz--UsJoNxLaNo-unsplash.png');
+    background-repeat: no-repeat;
+    background-size: 100% 576px;
+    background-attachment: fixed;
+}

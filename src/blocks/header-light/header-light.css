@@ -1,0 +1,23 @@
+@import url(./__link-dark/header__link-dark.css);
+@import url(../header/__link/_active/header__link_active.css);
+@import url(./__title-dark/header__title-dark.css);
+@import url(../header/__container/header__container.css);
+@import url(../header/__nav/header__nav.css);
+@import url(./__logout/header-light__logout.css);
+.header-light {
+    background: #FFFFFF;
+    box-shadow: inset 0px -1px 0px #D1D2D6;
+    margin: 0 auto;
+    padding: 0;
+    height: 80px;
+}
+
+.header__nav :last-child {
+    border: 1px solid #1A1B22;
+    box-sizing: border-box;
+    border-radius: 100px;
+    width: 176px;
+    height: 48px;
+    margin: 0 0 0 32px;
+    justify-content: center;
+}

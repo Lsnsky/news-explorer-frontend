@@ -1,0 +1,12 @@
+.search__description {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 24px;
+    /* or 133% */
+    /* main/white */
+    color: #FFFFFF;
+    max-width: 545px;
+    margin: 32px auto 0;
+}

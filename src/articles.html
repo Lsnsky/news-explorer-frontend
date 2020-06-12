@@ -15,36 +15,30 @@
 <body>
     <div class="root">
 
-        <header class="header">
+        <header class="header-light">
             <div class="header__container">
-                <a class="header__title" href="./index.html">
-                    NewsExplorer
-                </a>
+                <a class="header__title-dark" href="./index.html">
+                NewsExplorer
+            </a>
                 <nav class="header__nav">
-                    <a class="header__link" href="./index.html">Главная</a>
-                    <a class="header__link header__link_active" href="./articles.html">Сохраненные статьи</a>
-                    <a class="header__link" href="#">Авторизоваться</a>
+                    <a class=" header__link-dark" href="./index.html">Главная</a>
+                    <a class=" header__link-dark header__link_active" href="./articles.html">Сохраненные статьи</a>
+                    <a class=" header__link-dark" href="#">Грета
+                          <img class="header-light__logout" src="<%=require('./images/logout.png').default%>" alt="logout">
+                    </a>
                 </nav>
             </div>
         </header>
 
         <main>
-            <section class="search">
-                <h1 class="search__title">Что в мире творится?</h1>
-                <h2 class="search__description">Находите самые свежие статьи на любую тему и сохраняйте в своём личном кабинете.</h2>
-                <div class="search__panel">
-                    <input class="search__input" type="text" value="введите тему новости">
-                    <button class="search__button">Искать</button>
-                </div>
-            </section>
-
-            <section class="loader">
-                <img class="loader__image" src="<%=require('./images/Ellipse.png').default%>">
-                <div class="loader__info">Идет поиск новостей...</div>
+            <section class="articles-info">
+                <h2 class="articles-info__title">Сохранённые статьи</h2>
+                <h3 class="articles-info__description">Грета, у вас 5<br> сохранённых статей</h3>
+                <p class="articles-info__keywords">По ключевым словам:<span class="articles-info__keywords_bold"> Природа, Тайга</span> и <span class="articles-info__keywords_bold"> 2 другим</span></p>
             </section>
 
             <section class="cards">
-                <h2 class="cards__title">Результаты поиска</h2>
+
                 <div class="cards__container">
 
                     <div class="cards__item">
@@ -82,18 +76,31 @@
                             <div class="cards__item-source">Лента.ру</div>
                         </div>
                     </div>
+                    <div class="cards__item">
+                        <img class="cards__item-image" src="<%=require('./images/image_07.png').default%>">
+                        <img class="cards__item-label" src="<%=require('./images/Rectangle 6.png').default%>">
+                        <img class="cards__item-icon" src="<%=require('./images/Rectangle 8.png').default%>">
+                        <div class="cards__item-content">
+                            <div class="cards__item-date">2 августа, 2019</div>
+                            <h3 class="cards__item-title">Национальное достояние – парки</h3>
+                            <p class="cards__item-text">В 2016 году Америка отмечала важный юбилей: сто лет назад здесь начала складываться система национальных парков – охраняемых территорий, где и сегодня каждый может приобщиться к природе.</p>
+                            <div class="cards__item-source">Лента.ру</div>
+                        </div>
+                    </div>
 
+                    <div class="cards__item">
+                        <img class="cards__item-image" src="<%=require('./images/image_07.png').default%>">
+                        <img class="cards__item-label" src="<%=require('./images/Rectangle 6.png').default%>">
+                        <img class="cards__item-icon" src="<%=require('./images/Rectangle 8.png').default%>">
+                        <div class="cards__item-content">
+                            <div class="cards__item-date">2 августа, 2019</div>
+                            <h3 class="cards__item-title">Национальное достояние – парки</h3>
+                            <p class="cards__item-text">В 2016 году Америка отмечала важный юбилей: сто лет назад здесь начала складываться система национальных парков – охраняемых территорий, где и сегодня каждый может приобщиться к природе.</p>
+                            <div class="cards__item-source">Лента.ру</div>
+                        </div>
+                    </div>
                 </div>
-                <button class="cards__button">Показать еще</button>
-            </section>
 
-            <section class="profile">
-                <img class="profile__image" src="<%=require('./images/image-03.png').default%>" alt="author">
-                <div class="profile__content">
-                    <h3 class="profile__title">Об авторе</h3>
-                    <p class="profile__description">Это блок с описанием автора проекта. Здесь следует указать, как вас зовут, чем вы занимаетесь, какими технологиями разработки владеете.<br><br>Также можно рассказать о процессе обучения в Практикуме, чему вы тут научились, и чем можете
-                        помочь потенциальным заказчикам.</p>
-                </div>
             </section>
 
             <footer class="footer">
@@ -101,7 +108,7 @@
                 <div class="footer__author">&copy; 2020 Supersite, Powered by News API</div>
                 <nav class="footer__nav">
                     <a class="footer__link" href="./index.html">Главная</a>
-                    <a class="footer__link" href="https://praktikum.yandex.ru/" target="_blank">Яндекс.Практикум</a>
+                    <a class="footer__link" href="https://praktikum.yandex.ru/">Яндекс.Практикум</a>
                     <div class="footer__social">
                         <img class="footer__social-icon" src="<%=require('./images/github.png').default%>" alt=" github icon ">
                         <img class="footer__social-icon" src="<%=require('./images/fb.png').default%>" alt="facebook icon ">
@@ -109,11 +116,8 @@
                 </nav>
             </footer>
         </main>
-
     </div>
-
     <script src="<%=htmlWebpackPlugin.files.js%>"></script>
-
 </body>
 
 </html>

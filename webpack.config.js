@@ -8,7 +8,10 @@ const webpack = require('webpack');
 
 
 module.exports = {
-    entry: { main: './src/index.js' },
+    entry: {
+        main: './src/index.js',
+        articles: './src/saved-articles/index.js',
+    },
     output: {
         path: path.resolve(__dirname, 'dist'),
         filename: '[name].[chunkhash].js'
@@ -58,9 +61,16 @@ module.exports = {
             canPrint: true
         }),
         new HtmlWebpackPlugin({
-            inject: false,
+            inject: true,
             template: './src/index.html',
-            filename: 'index.html'
+            filename: 'index.html',
+            chunks: ['main']
+        }),
+        new HtmlWebpackPlugin({
+            inject: true,
+            template: './src/articles.html',
+            filename: 'articles.html',
+            chunks: ['articles']
         }),
         new WebpackMd5Hash(),
         new webpack.DefinePlugin({
