@@ -19,3 +19,9 @@
     right: 69px;
     justify-content: center;
 }
+
+@media screen and (max-width:1220px) {
+    .cards__item-sticker {
+        display: none;
+    }
+}

@@ -10,3 +10,12 @@
     max-width: 545px;
     margin: 80px auto 0;
 }
+
+@media screen and (max-width:768px) {
+    .search__title {
+        margin: 38px auto 0;
+        font-size: 36px;
+        line-height: 40px;
+        max-width: 385px;
+    }
+}

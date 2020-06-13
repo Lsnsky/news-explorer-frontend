@@ -5,3 +5,9 @@
     border-radius: 20px 20px 0 0;
     height: 272px;
 }
+
+@media screen and (max-width:1024px) {
+    .cards__item-image {
+        height: 150px;
+    }
+}

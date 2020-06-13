@@ -16,3 +16,9 @@
     height: 64px;
     display: flex;
 }
+
+@media screen and (max-width:768px) {
+    .search__panel {
+        margin: 48px auto;
+    }
+}

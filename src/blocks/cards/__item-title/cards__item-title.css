@@ -7,3 +7,10 @@
     line-height: 30px;
     color: #1A1B22;
 }
+
+@media screen and (max-width:1024px) {
+    .cards__item-title {
+        font-size: 22px;
+        line-height: 24px;
+    }
+}

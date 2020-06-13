@@ -21,5 +21,24 @@
     max-width: 1440px;
     /* width: 100%; */
     padding: 0 104px;
-    margin: 80px auto 0;
+    margin: 0 auto;
+    background: #F5F6F7;
+}
+
+@media screen and (max-width:1280px) {
+    .cards {
+        padding: 0 80px;
+    }
+}
+
+@media screen and (max-width:1024px) {
+    .cards {
+        padding: 0 60px;
+    }
+}
+
+@media screen and (max-width:768px) {
+    .cards {
+        padding: 0 40px;
+    }
 }

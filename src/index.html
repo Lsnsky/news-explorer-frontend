@@ -23,7 +23,7 @@
                 <nav class="header__nav">
                     <a class="header__link" href="./index.html">Главная</a>
                     <a class="header__link header__link_active" href="./articles.html">Сохраненные статьи</a>
-                    <a class="header__link" href="#">Авторизоваться</a>
+                    <a class="header__authorization" href="#">Авторизоваться</a>
                 </nav>
             </div>
         </header>
@@ -88,7 +88,9 @@
             </section>
 
             <section class="profile">
-                <img alt="author-image" class="profile__image" src="<%=require('./images/image-03.png').default%>">
+                <div class="profile__image-wraper">
+                    <img alt="author-image" class="profile__image" src="<%=require('./images/image-03.png').default%>">
+                </div>
                 <div class="profile__content">
                     <h3 class="profile__title">Об авторе</h3>
                     <p class="profile__description">Это блок с описанием автора проекта. Здесь следует указать, как вас зовут, чем вы занимаетесь, какими технологиями разработки владеете.<br><br>Также можно рассказать о процессе обучения в Практикуме, чему вы тут научились, и чем можете
