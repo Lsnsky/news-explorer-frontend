@@ -10,6 +10,10 @@
 @import url(./__item-text/cards__item-text.css);
 @import url(./__item-source/cards__item-source.css);
 @import url(./__button/cards__button.css);
+@import url(./__item-icon-trash/cards__item-icon-trash.css);
+@import url(./__item-sticker/cards__item-sticker.css);
+@import url(./__item-category/cards__item-category.css);
+@import url(./__delete-btn/cards__delete-btn.css);
 .cards {
     display: flex;
     justify-content: space-between;

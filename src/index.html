@@ -7,7 +7,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <meta name="description" content="Дипломная работа">
     <meta name="author" content="Игорь Лисянский">
-    <link rel="shortcut icon" href="/src/images/Rectangle 2.png" type="image/x-icon">
+    <link rel="shortcut icon" href="/src/images/Rectangle-2.png" type="image/x-icon">
     <link rel="stylesheet" href="<%=htmlWebpackPlugin.files.css%>">
     <title>News-explorer</title>
 </head>
@@ -39,8 +39,8 @@
             </section>
 
             <section class="loader">
-                <img class="loader__image" src="<%=require('./images/Ellipse.png').default%>">
-                <div class="loader__info">Идет поиск новостей...</div>
+                <img alt="loade-image" class="loader__image" src="<%=require('./images/Ellipse.png').default%>">
+                <h3 class="loader__info">Идет поиск новостей...</h3>
             </section>
 
             <section class="cards">
@@ -48,9 +48,9 @@
                 <div class="cards__container">
 
                     <div class="cards__item">
-                        <img class="cards__item-image" src="<%=require('./images/image_08.png').default%>">
-                        <img class="cards__item-label" src="<%=require('./images/Rectangle 6.png').default%>">
-                        <img class="cards__item-icon" src="<%=require('./images/Rectangle 8.png').default%>">
+                        <img alt="news-image" class="cards__item-image" src="<%=require('./images/image_08.png').default%>">
+                        <img alt="label" class="cards__item-label" src="<%=require('./images/Rectangle-6.png').default%>">
+                        <img alt="icon" class="cards__item-icon" src="<%=require('./images/Rectangle-8.png').default%>">
                         <div class="cards__item-content">
                             <div class="cards__item-date">2 августа, 2019</div>
                             <h3 class="cards__item-title">Национальное достояние – парки</h3>
@@ -60,9 +60,9 @@
                     </div>
 
                     <div class="cards__item">
-                        <img class="cards__item-image" src="<%=require('./images/image_04.png').default%>">
-                        <img class="cards__item-label" src="<%=require('./images/Rectangle 6.png').default%>">
-                        <img class="cards__item-icon" src="<%=require('./images/Rectangle 8.png').default%>">
+                        <img alt="news-image" class="cards__item-image" src="<%=require('./images/image_04.png').default%>">
+                        <img alt="label" class="cards__item-label" src="<%=require('./images/Rectangle-6.png').default%>">
+                        <img alt="icon" class="cards__item-icon" src="<%=require('./images/Rectangle-8.png').default%>">
                         <div class="cards__item-content">
                             <div class="cards__item-date">2 августа, 2019</div>
                             <h3 class="cards__item-title">Национальное достояние – парки</h3>
@@ -72,9 +72,9 @@
                     </div>
 
                     <div class="cards__item">
-                        <img class="cards__item-image" src="<%=require('./images/image_07.png').default%>">
-                        <img class="cards__item-label" src="<%=require('./images/Rectangle 6.png').default%>">
-                        <img class="cards__item-icon" src="<%=require('./images/Rectangle 8.png').default%>">
+                        <img alt="news-image" class="cards__item-image" src="<%=require('./images/image_07.png').default%>">
+                        <img alt="label" class="cards__item-label" src="<%=require('./images/Rectangle-6.png').default%>">
+                        <img alt="icon" class="cards__item-icon" src="<%=require('./images/Rectangle-8.png').default%>">
                         <div class="cards__item-content">
                             <div class="cards__item-date">2 августа, 2019</div>
                             <h3 class="cards__item-title">Национальное достояние – парки</h3>
@@ -88,28 +88,88 @@
             </section>
 
             <section class="profile">
-                <img class="profile__image" src="<%=require('./images/image-03.png').default%>" alt="author">
+                <img alt="author-image" class="profile__image" src="<%=require('./images/image-03.png').default%>">
                 <div class="profile__content">
                     <h3 class="profile__title">Об авторе</h3>
                     <p class="profile__description">Это блок с описанием автора проекта. Здесь следует указать, как вас зовут, чем вы занимаетесь, какими технологиями разработки владеете.<br><br>Также можно рассказать о процессе обучения в Практикуме, чему вы тут научились, и чем можете
                         помочь потенциальным заказчикам.</p>
                 </div>
             </section>
-
-            <footer class="footer">
-
-                <div class="footer__author">&copy; 2020 Supersite, Powered by News API</div>
-                <nav class="footer__nav">
-                    <a class="footer__link" href="./index.html">Главная</a>
-                    <a class="footer__link" href="https://praktikum.yandex.ru/" target="_blank">Яндекс.Практикум</a>
-                    <div class="footer__social">
-                        <img class="footer__social-icon" src="<%=require('./images/github.png').default%>" alt=" github icon ">
-                        <img class="footer__social-icon" src="<%=require('./images/fb.png').default%>" alt="facebook icon ">
-                    </div>
-                </nav>
-            </footer>
         </main>
 
+        <footer class="footer">
+            <div class="footer__author">&copy; 2020 Supersite, Powered by News API</div>
+            <nav class="footer__nav">
+                <a class="footer__link" href="./index.html">Главная</a>
+                <a class="footer__link" href="https://praktikum.yandex.ru/" target="_blank">Яндекс.Практикум</a>
+                <div class="footer__social">
+                    <img class="footer__social-icon" src="<%=require('./images/github.png').default%>" alt=" github icon ">
+                    <img class="footer__social-icon" src="<%=require('./images/fb.png').default%>" alt="facebook icon ">
+                </div>
+            </nav>
+        </footer>
+    </div>
+
+    <div class="popup">
+        <div class="popup__content">
+            <img src="<%=require('./images/close.png').default%>" alt="close" class="popup__close">
+            <h3 class="popup__title">Регистрация</h3>
+            <form class="form popup__form" name="new" novalidate>
+                <div class="input__container">
+                    <div class="input__name">Email</div>
+                    <input type="email" name="name" class="popup__input popup__input_type_email" placeholder="Введите email" required minlength="2" maxlength="30">
+                    <div class="error-message"></div>
+                </div>
+                <div class="input__container">
+                    <div class="input__name">Пароль</div>
+                    <input type="text" name="link" class="popup__input popup__input_type_password" placeholder="Введите пароль" required>
+                    <div class="error-message"></div>
+                </div>
+                <div class="input__container">
+                    <div class="input__name">Имя</div>
+                    <input type="text" name="link" class="popup__input popup__input_type_name" placeholder="Введите своё имя" required>
+                    <div class="error-message"></div>
+                </div>
+                <button type="submit" disabled='disabled' class="button popup__button">Зарегистрироваться</button>
+                <div class="popup__text-block">
+                    <div class="popup__text">или</div>
+                    <a href="#" class="popup__link">Войти</a>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <div class="popup-login">
+        <div class="popup__content">
+            <img src="<%=require('./images/close.png').default%>" alt="close" class="popup__close">
+            <h3 class="popup__title">Вход</h3>
+            <form class="form popup__form" name="new" novalidate>
+                <div class="input__container">
+                    <div class="input__name">Email</div>
+                    <input type="email" name="name" class="popup__input popup__input_type_email" placeholder="Введите email" required minlength="2" maxlength="30">
+                    <div class="error-message"></div>
+                </div>
+                <div class="input__container">
+                    <div class="input__name">Пароль</div>
+                    <input type="text" name="link" class="popup__input popup__input_type_password" placeholder="Введите пароль" required>
+                    <div class="error-message"></div>
+                </div>
+
+                <button type="submit" disabled='disabled' class="button popup__button">Войти</button>
+                <div class="popup__text-block">
+                    <div class="popup__text">или</div>
+                    <a href="#" class="popup__link">Зарегистрироваться</a>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <div class="popup-success">
+        <div class="popup__content">
+            <img src="<%=require('./images/close.png').default%>" alt="close" class="popup__close">
+            <h3 class="popup__title">Пользователь успешно зарегистрирован</h3>
+            <a href="#" class="popup__link">Выполнить вход</a>
+        </div>
     </div>
 
     <script src="<%=htmlWebpackPlugin.files.js%>"></script>

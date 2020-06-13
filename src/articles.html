@@ -7,7 +7,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <meta name="description" content="Дипломная работа">
     <meta name="author" content="Игорь Лисянский">
-    <link rel="shortcut icon" href="/src/images/Rectangle 2.png" type="image/x-icon">
+    <link rel="shortcut icon" href="/src/images/Rectangle-2.png" type="image/x-icon">
     <link rel="stylesheet" href="<%=htmlWebpackPlugin.files.css%>">
     <title>News-explorer</title>
 </head>
@@ -24,7 +24,7 @@
                     <a class=" header__link-dark" href="./index.html">Главная</a>
                     <a class=" header__link-dark header__link_active" href="./articles.html">Сохраненные статьи</a>
                     <a class=" header__link-dark" href="#">Грета
-                          <img class="header-light__logout" src="<%=require('./images/logout.png').default%>" alt="logout">
+                          <img alt="logout-image" class="header-light__logout" src="<%=require('./images/logout.png').default%>">
                     </a>
                 </nav>
             </div>
@@ -42,9 +42,11 @@
                 <div class="cards__container">
 
                     <div class="cards__item">
-                        <img class="cards__item-image" src="<%=require('./images/image_08.png').default%>">
-                        <img class="cards__item-label" src="<%=require('./images/Rectangle 6.png').default%>">
-                        <img class="cards__item-icon" src="<%=require('./images/Rectangle 8.png').default%>">
+                        <img alt="news-image" class="cards__item-image" src="<%=require('./images/image_08.png').default%>">
+                        <!-- <img class="cards__item-label" src="<%=require('./images/Rectangle-6.png').default%>"> -->
+                        <button class="cards__delete-btn "><img alt="trash-image" class="cards__item-icon-trash" src="<%=require('./images/trash.png').default%>"></button>
+                        <!-- <img class="cards__item-icon-trash" src="<%=require('./images/trash.png').default%>"> -->
+                        <button class="cards__item-category">Природа</button>
                         <div class="cards__item-content">
                             <div class="cards__item-date">2 августа, 2019</div>
                             <h3 class="cards__item-title">Национальное достояние – парки</h3>
@@ -54,9 +56,11 @@
                     </div>
 
                     <div class="cards__item">
-                        <img class="cards__item-image" src="<%=require('./images/image_04.png').default%>">
-                        <img class="cards__item-label" src="<%=require('./images/Rectangle 6.png').default%>">
-                        <img class="cards__item-icon" src="<%=require('./images/Rectangle 8.png').default%>">
+                        <img alt="news-image" class="cards__item-image" src="<%=require('./images/image_04.png').default%>">
+                        <!-- <img class="cards__item-label" src="<%=require('./images/Rectangle-6.png').default%>"> -->
+                        <button class="cards__delete-btn "><img alt="trash-image" class="cards__item-icon-trash" src="<%=require('./images/trash.png').default%>"></button>
+                        <button class="cards__item-sticker">Убрать из сохранённых</button>
+                        <button class="cards__item-category">Природа</button>
                         <div class="cards__item-content">
                             <div class="cards__item-date">2 августа, 2019</div>
                             <h3 class="cards__item-title">Национальное достояние – парки</h3>
@@ -66,9 +70,11 @@
                     </div>
 
                     <div class="cards__item">
-                        <img class="cards__item-image" src="<%=require('./images/image_07.png').default%>">
-                        <img class="cards__item-label" src="<%=require('./images/Rectangle 6.png').default%>">
-                        <img class="cards__item-icon" src="<%=require('./images/Rectangle 8.png').default%>">
+                        <img alt="news-image" class="cards__item-image" src="<%=require('./images/image_07.png').default%>">
+                        <!-- <img class="cards__item-label" src="<%=require('./images/Rectangle-6.png').default%>"> -->
+                        <!-- <img class="cards__item-icon-trash" src="<%=require('./images/trash.png').default%>"> -->
+                        <button class="cards__delete-btn "><img alt="trash-image" class="cards__item-icon-trash" src="<%=require('./images/trash.png').default%>"></button>
+                        <button class="cards__item-category">Тайга</button>
                         <div class="cards__item-content">
                             <div class="cards__item-date">2 августа, 2019</div>
                             <h3 class="cards__item-title">Национальное достояние – парки</h3>
@@ -77,9 +83,11 @@
                         </div>
                     </div>
                     <div class="cards__item">
-                        <img class="cards__item-image" src="<%=require('./images/image_07.png').default%>">
-                        <img class="cards__item-label" src="<%=require('./images/Rectangle 6.png').default%>">
-                        <img class="cards__item-icon" src="<%=require('./images/Rectangle 8.png').default%>">
+                        <img alt="news-image" class="cards__item-image" src="<%=require('./images/image_07.png').default%>">
+                        <!-- <img class="cards__item-label" src="<%=require('./images/Rectangle-6.png').default%>"> -->
+                        <!-- <img class="cards__item-icon-trash" src="<%=require('./images/trash.png').default%>"> -->
+                        <button class="cards__delete-btn "><img alt="trash-image" class="cards__item-icon-trash" src="<%=require('./images/trash.png').default%>"></button>
+                        <button class="cards__item-category">Парки</button>
                         <div class="cards__item-content">
                             <div class="cards__item-date">2 августа, 2019</div>
                             <h3 class="cards__item-title">Национальное достояние – парки</h3>
@@ -89,9 +97,11 @@
                     </div>
 
                     <div class="cards__item">
-                        <img class="cards__item-image" src="<%=require('./images/image_07.png').default%>">
-                        <img class="cards__item-label" src="<%=require('./images/Rectangle 6.png').default%>">
-                        <img class="cards__item-icon" src="<%=require('./images/Rectangle 8.png').default%>">
+                        <img alt="news-image" class="cards__item-image" src="<%=require('./images/image_07.png').default%>">
+                        <!-- <img class="cards__item-label" src="<%=require('./images/Rectangle-6.png').default%>"> -->
+                        <!-- <img class="cards__item-icon-trash" src="<%=require('./images/trash.png').default%>"> -->
+                        <button class="cards__delete-btn "><img alt="trash-image" class="cards__item-icon-trash" src="<%=require('./images/trash.png').default%>"></button>
+                        <button class="cards__item-category">Фотография</button>
                         <div class="cards__item-content">
                             <div class="cards__item-date">2 августа, 2019</div>
                             <h3 class="cards__item-title">Национальное достояние – парки</h3>
@@ -102,20 +112,20 @@
                 </div>
 
             </section>
-
-            <footer class="footer">
-
-                <div class="footer__author">&copy; 2020 Supersite, Powered by News API</div>
-                <nav class="footer__nav">
-                    <a class="footer__link" href="./index.html">Главная</a>
-                    <a class="footer__link" href="https://praktikum.yandex.ru/">Яндекс.Практикум</a>
-                    <div class="footer__social">
-                        <img class="footer__social-icon" src="<%=require('./images/github.png').default%>" alt=" github icon ">
-                        <img class="footer__social-icon" src="<%=require('./images/fb.png').default%>" alt="facebook icon ">
-                    </div>
-                </nav>
-            </footer>
         </main>
+        <footer class="footer">
+
+            <div class="footer__author">&copy; 2020 Supersite, Powered by News API</div>
+            <nav class="footer__nav">
+                <a class="footer__link" href="./index.html">Главная</a>
+                <a class="footer__link" href="https://praktikum.yandex.ru/">Яндекс.Практикум</a>
+                <div class="footer__social">
+                    <img class="footer__social-icon" src="<%=require('./images/github.png').default%>" alt=" github icon ">
+                    <img class="footer__social-icon" src="<%=require('./images/fb.png').default%>" alt="facebook icon ">
+                </div>
+            </nav>
+        </footer>
+
     </div>
     <script src="<%=htmlWebpackPlugin.files.js%>"></script>
 </body>

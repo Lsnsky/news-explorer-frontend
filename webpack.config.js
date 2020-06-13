@@ -1,9 +1,9 @@
 const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const WebpackMd5Hash = require('webpack-md5-hash');
-const MiniCssExtractPlugin = require("mini-css-extract-plugin"); // добавили плагин
-const OptimizeCssAssetsPlugin = require('optimize-css-assets-webpack-plugin'); // подключаем плагин
-const isDev = process.env.NODE_ENV === 'development'; // создаем переменную для development-сборки
+const MiniCssExtractPlugin = require("mini-css-extract-plugin");
+const OptimizeCssAssetsPlugin = require('optimize-css-assets-webpack-plugin');
+const isDev = process.env.NODE_ENV === 'development'; // создать переменную для development-сборки
 const webpack = require('webpack');
 
 
@@ -35,7 +35,7 @@ module.exports = {
             {
                 test: /\.(png|jpg|gif|ico|svg)$/,
                 use: [
-                    'file-loader?name=images/[name].[ext]', // указали папку, куда складывать изображения
+                    'file-loader?name=images/[name].[ext]',
                     {
                         loader: 'image-webpack-loader',
                         options: {}
