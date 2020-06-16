@@ -8,12 +8,12 @@
     /* main/white */
     color: #FFFFFF;
     max-width: 545px;
-    margin: 32px auto 0;
+    margin: 32px 0 0;
 }
 
 @media screen and (max-width:768px) {
     .search__description {
-        margin: 16px auto 0;
-        max-width: 385px;
+        margin: 16px 0 0;
+        max-width: 450px;
     }
 }

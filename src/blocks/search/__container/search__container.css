@@ -1,0 +1,11 @@
+.search__container {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+}
+
+@media screen and (max-width:500px) {
+    .search__container {
+        margin: 0 20px;
+    }
+}

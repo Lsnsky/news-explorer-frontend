@@ -1,0 +1,7 @@
+@media screen and (max-width:730px) {
+    .footer__menu {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+}

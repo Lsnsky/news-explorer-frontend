@@ -3,6 +3,7 @@
 @import url(./__link/footer__link.css);
 @import url(./__social/footer__social.css);
 @import url(./__social-icon/footer__social-icon.css);
+@import url(./__menu/footer__menu.css);
 .footer {
     display: flex;
     justify-content: space-between;
@@ -29,5 +30,20 @@
 @media screen and (max-width:768px) {
     .footer {
         padding: 0 40px;
+    }
+}
+
+@media screen and (max-width:730px) {
+    .footer {
+        padding: 0 40px;
+        flex-direction: column;
+        flex-flow: column-reverse;
+        height: 200px;
+    }
+}
+
+@media screen and (max-width:500px) {
+    .footer {
+        padding: 0 16px;
     }
 }

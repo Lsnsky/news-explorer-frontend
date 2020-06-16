@@ -8,3 +8,10 @@
     margin: 0;
     padding: 40px 0 0 0;
 }
+
+@media screen and (max-width:500px) {
+    .articles-info__title {
+        font-size: 12px;
+        line-height: 24px;
+    }
+}

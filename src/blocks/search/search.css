@@ -3,10 +3,17 @@
 @import url(./__panel/search__panel.css);
 @import url(./__input/search__input.css);
 @import url(./__button/search__button.css);
+@import url(./__container/search__container.css);
 .search {
     display: flex;
     justify-content: space-between;
     flex-direction: column;
     align-content: center;
     margin: auto;
+}
+
+@media screen and (max-width:500px) {
+    .search {
+        height: 480px;
+    }
 }

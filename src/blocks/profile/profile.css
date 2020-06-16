@@ -30,3 +30,15 @@
         padding: 0 40px;
     }
 }
+
+@media screen and (max-width:730px) {
+    .profile {
+        flex-direction: column;
+    }
+}
+
+@media screen and (max-width:500px) {
+    .profile {
+        padding: 0 16px;
+    }
+}

@@ -1,0 +1,32 @@
+.header__checkbox {
+    display: none;
+    position: absolute;
+    top: 24px;
+    right: 24px;
+    z-index: 100;
+}
+
+@media screen and (max-width:750px) {
+    .header__checkbox:checked~.header__nav {
+        display: flex;
+        width: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        padding-top: 56px;
+        flex-direction: column;
+        background: #1A1B22;
+        border-radius: 0 0 16px 16px;
+        z-index: 1;
+    }
+    .header__checkbox:checked~.header__title {
+        color: #ffffff;
+    }
+    .header__checkbox:checked~.header__mobile-icon {
+        cursor: pointer;
+        display: flex;
+        background: url(../../../images/close.png);
+        background-position: center;
+        z-index: 3;
+    }
+}

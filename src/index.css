@@ -10,18 +10,5 @@
 @import url(./blocks/popup/popup.css);
 @import url(./blocks/popup-login/popup-login.css);
 @import url(./blocks/popup-success/popup-success.css);
-.header,
-.search {
-    margin: 0;
-    background-image: url('./images/georgia-de-lotz--UsJoNxLaNo-unsplash.png');
-    background-repeat: no-repeat;
-    background-size: 100% 576px;
-    background-attachment: fixed;
-}
-
-@media screen and (max-width:768px) {
-    .header,
-    .search {
-        background-size: 100% 466px;
-    }
-}
+@import url(./blocks/link/link.css);
+@import url(./blocks/btn/btn.css);
