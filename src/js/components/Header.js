@@ -1,8 +1,8 @@
-export class Header {
-    constructor(options) {
-        render(props) {
-            isLoggedIn,
-            userName
-        }
-    }
-}
+// export class Header {
+//     constructor(options) {
+//         render(props) {
+//             isLoggedIn,
+//             userName
+//         }
+//     }
+// }

@@ -1,22 +1,22 @@
-export class Form {
-    constructor() {
+// export class Form {
+//     constructor() {
 
-        setServerError() {
+//         setServerError() {
 
-        }
+//         }
 
-        _validateInputElement() {
+//         _validateInputElement() {
 
-        }
-        _validateForm() {
+//         }
+//         _validateForm() {
 
-        }
-        _clear() {
+//         }
+//         _clear() {
 
-        }
-        _getInfo() {
+//         }
+//         _getInfo() {
 
-        }
+//         }
 
-    }
-}
+//     }
+// }

@@ -1,8 +1,8 @@
-export class NewsCard {
-    constructor() {
+// export class NewsCard {
+//     constructor() {
 
-        renderIcon() {
+//         renderIcon() {
 
-        }
-    }
-}
+//         }
+//     }
+// }

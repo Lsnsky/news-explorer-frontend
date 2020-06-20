@@ -1,20 +1,20 @@
-export class NewsCardList {
-    constructor() {
+// export class NewsCardList {
+//     constructor() {
 
-        renderResults() {
+//         renderResults() {
 
-        }
-        renderLoader() {
+//         }
+//         renderLoader() {
 
-        }
-        renderError() {
+//         }
+//         renderError() {
 
-        }
-        showMore() {
+//         }
+//         showMore() {
 
-        }
-        addCard() {
+//         }
+//         addCard() {
 
-        }
-    }
-}
+//         }
+//     }
+// }

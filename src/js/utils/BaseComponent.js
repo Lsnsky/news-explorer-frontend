@@ -1,8 +1,8 @@
-export class BaseComponent {
-    constructor() {
+// export class BaseComponent {
+//     constructor() {
 
-        _setHandlers() {
+//         _setHandlers() {
 
-        }
-    }
-}
+//         }
+//     }
+// }

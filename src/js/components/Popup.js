@@ -1,17 +1,21 @@
 export class Popup {
-    constructor() {
-
-        setContent() {
-
+    constructor(popup) {
+            this.popup = popup;
+            this.popup.querySelector('.popup__close').addEventListener('click', () => {
+                this.close()
+            });
         }
-        clearContent() {
+        // setContent() {
 
-        }
-        open() {
+    // }
+    // clearContent() {
 
-        }
-        close() {
+    // }
+    open() {
+        this.popup.classList.add('popup_is-opened');
+    }
 
-        }
+    close() {
+        this.popup.classList.remove('popup_is-opened');
     }
 }

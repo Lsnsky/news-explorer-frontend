@@ -1,23 +1,23 @@
-export class MainApi {
-    constructor() {
+// export class MainApi {
+//     constructor() {
 
-        signup() {
+//         signup() {
 
-        }
-        signin() {
+//         }
+//         signin() {
 
-        }
-        getUserData() {
+//         }
+//         getUserData() {
 
-        }
-        getArticles() {
+//         }
+//         getArticles() {
 
-        }
-        createArticle() {
+//         }
+//         createArticle() {
 
-        }
-        removeArticle() {
+//         }
+//         removeArticle() {
 
-        }
-    }
-}
+//         }
+//     }
+// }
