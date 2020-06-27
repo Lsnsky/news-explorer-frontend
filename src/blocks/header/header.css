@@ -7,6 +7,8 @@
 @import url(./__articles/header__articles.css);
 @import url(./__button/header__button.css);
 @import url(./_active/header_active.css);
+@import url(./__button-user/header__button-user.css);
+@import url(./__logout/header__logout.css);
 .header {
     background: rgba(196, 196, 196, 0.01);
     box-shadow: inset 0px -1px 0px rgba(255, 255, 255, 0.2);

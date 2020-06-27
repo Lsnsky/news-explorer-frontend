@@ -7,4 +7,9 @@
     flex-direction: column;
     background: #F5F6F7;
     max-width: 1440px;
+    display: none;
+}
+
+.loader_is-active {
+    display: flex;
 }

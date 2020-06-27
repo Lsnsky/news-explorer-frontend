@@ -15,36 +15,40 @@
 @import url(./__item-category/cards__item-category.css);
 @import url(./__delete-btn/cards__delete-btn.css);
 .cards {
-    display: flex;
+    /* display: flex; */
     justify-content: space-between;
     flex-direction: column;
     max-width: 1440px;
-    /* width: 100%; */
-    padding: 0 104px;
+    padding: 80px 104px 0 104px;
     margin: 0 auto;
     background: #F5F6F7;
+    display: none;
 }
 
 @media screen and (max-width:1280px) {
     .cards {
-        padding: 0 80px;
+        padding: 60px 80px 0 80px;
     }
 }
 
 @media screen and (max-width:1024px) {
     .cards {
-        padding: 0 60px;
+        padding: 40px 60px 0 60px;
     }
 }
 
 @media screen and (max-width:768px) {
     .cards {
-        padding: 0 40px;
+        padding: 20px 40px 0 40px;
     }
 }
 
 @media screen and (max-width:500px) {
     .cards {
-        padding: 0 16px;
+        padding: 20px 16px 0 16px;
     }
+}
+
+.cards_is-active {
+    display: flex;
 }

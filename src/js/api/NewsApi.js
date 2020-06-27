@@ -5,11 +5,11 @@ export class NewsApi {
     }
     getNews(textInput, startDate, currentDate) {
         return fetch(`${this.url}&q=${textInput}&from=${startDate}&to=${currentDate}`)
-            .then(res => {
+            .then((res) => {
                 if (!res.ok) {
                     return Promise.reject()
                 }
-                console.log(res.json());
+                return res.json();
             })
     }
 }

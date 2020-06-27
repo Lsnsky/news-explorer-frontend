@@ -21,8 +21,10 @@
             <a href="./index.html" class="header__title">NewsExplorer</a>
             <nav class="header__nav">
                 <a class="header__startpage link header_active" href="./index.html">Главная</a>
-                <a class="header__articles link" href="./articles.html">Сохранённые статьи</a>
+                <a class="header__articles  link" href="./articles.html">Сохранённые статьи</a>
                 <button class="header__button btn">Авторизация<span class=""></span></button>
+                <div class="header__button-user btn"></div>
+                <img class="header__logout" src="<%=require('./images/logoutw.png').default%>">
             </nav>
         </header>
         <main>
@@ -30,17 +32,27 @@
                 <div class="search__container">
                     <h1 class="search__title">Что в мире творится?</h1>
                     <h2 class="search__description">Находите самые свежие статьи на любую тему и сохраняйте в своём личном кабинете.</h2>
-                    <div class="search__panel">
+                    <form class="search__panel">
                         <input class="search__input" type="text" name="search" placeholder="введите тему новости">
-                        <button class="search__button btn">Искать</button>
-                    </div>
+                        <button class="search__button  btn">Искать</button>
+                    </form>
                 </div>
             </section>
 
+
             <section class="loader">
-                <img alt="loade-image" class="loader__image" src="<%=require('./images/Ellipse.png').default%>">
+                <!-- <i class="circle-preloader"></i> -->
+                <img alt="loader-image" class="loader__image" src="<%=require('./images/Ellipse.png').default%>">
                 <h3 class="loader__info">Идет поиск новостей...</h3>
             </section>
+
+            <section class="search-not-found">
+                <img alt="search-not-found__image" class="loader__image" src="<%=require('./images/not-found_v1.png').default%>">
+                <h3 class="search-not-found__title">Ничего не найдено</h3>
+                <p class="search-not-found__text">К сожалению по вашему запросу ничего не найдено.</p>
+            </section>
+
+
 
             <section class="cards">
                 <h2 class="cards__title">Результаты поиска</h2>
@@ -98,21 +110,21 @@
             <form class="form popup__form" name="new" novalidate>
                 <div class="input__container">
                     <div class="popup__input-name">Email</div>
-                    <input type="email" name="name" class="popup__input popup__input_type_email" placeholder="Введите email" required minlength="2" maxlength="30">
+                    <input type="email" name="email" class="popup__input popup__input_type_email" placeholder="Введите email" required>
                     <div class="error-message"></div>
                 </div>
                 <div class="input__container">
                     <div class="popup__input-name">Пароль</div>
-                    <input type="text" name="link" class="popup__input popup__input_type_password" placeholder="Введите пароль" required>
+                    <input type="password" name="password" class="popup__input popup__input_type_password" placeholder="Введите пароль" required minlength="2">
                     <div class="error-message"></div>
                 </div>
                 <div class="input__container">
                     <div class="popup__input-name">Имя</div>
-                    <input type="text" name="link" class="popup__input popup__input_type_name" placeholder="Введите своё имя" required>
+                    <input type="text" name="name" class="popup__input popup__input_type_name" placeholder="Введите своё имя" required minlength="2" maxlength="30">
                     <div class="error-message"></div>
                 </div>
                 <div class="error-message"></div>
-                <button type="submit" disabled='disabled' class="popup__button btn">Зарегистрироваться</button>
+                <button type="submit" class="popup__button btn">Зарегистрироваться</button>
                 <div class="popup__text-block">
                     <div class="popup__text">или</div>
                     <a href="#" class="popup__link link">Войти</a>
@@ -128,16 +140,16 @@
             <form class="form popup__form" name="new" novalidate>
                 <div class="input__container">
                     <div class="popup__input-name">Email</div>
-                    <input type="email" name="name" class="popup__input popup__input_type_email" placeholder="Введите email" required minlength="2" maxlength="30">
+                    <input type="email" name="email" class="popup__input popup__input_type_email" placeholder="Введите email" required>
                     <div class="error-message"></div>
                 </div>
                 <div class="input__container">
                     <div class="popup__input-name ">Пароль</div>
-                    <input type="text" name="link" class="popup__input popup__input_type_password" placeholder="Введите пароль" required>
+                    <input type="password" name="password" class="popup__input popup__input_type_password" placeholder="Введите пароль" required minlength="2">
                     <div class="error-message"></div>
                 </div>
                 <div class="error-message"></div>
-                <button type="submit" disabled='disabled' class="popup__button btn">Войти</button>
+                <button type="submit" class="popup__button  btn">Войти</button>
                 <div class="popup__text-block">
                     <div class="popup__text">или</div>
                     <a href="#" class="popup__link link">Зарегистрироваться</a>

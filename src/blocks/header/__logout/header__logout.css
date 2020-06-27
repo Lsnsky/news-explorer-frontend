@@ -1,0 +1,23 @@
+.header__logout {
+    width: 26px;
+    height: 26px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #FFFFFF;
+    box-sizing: border-box;
+    border-radius: 10px;
+    width: 30px;
+    height: 30px;
+    background-color: transparent;
+    color: #FFFFFF;
+    margin-left: 32px;
+    margin-top: 23px;
+    cursor: pointer;
+    background-position: center;
+    display: none;
+}
+
+.header__logout_active {
+    display: flex;
+}

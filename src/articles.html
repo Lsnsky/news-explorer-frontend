@@ -23,7 +23,8 @@
             <nav class="header__nav">
                 <a class="header__startpage link header_active header__startpage_black" href="./index.html">Главная</a>
                 <a class="header__articles header__articles_black link " href="./articles.html">Сохранённые статьи</a>
-                <button class="header__button header__button_black btn">Грета<span class=""></span></button>
+                <div class="header__button header__button_black btn">Грета</div>
+                <img class="header__logout" src="<%=require('./images/logout.png').default%>">
             </nav>
         </header>
 
@@ -38,74 +39,7 @@
 
                 <div class="cards__container">
 
-                    <div class="cards__item">
-                        <img alt="news-image" class="cards__item-image" src="<%=require('./images/image_08.png').default%>">
-                        <!-- <img class="cards__item-label" src="<%=require('./images/Rectangle-6.png').default%>"> -->
-                        <button class="cards__delete-btn btn"><img alt="trash-image" class="cards__item-icon-trash" src="<%=require('./images/trash.png').default%>"></button>
-                        <!-- <img class="cards__item-icon-trash" src="<%=require('./images/trash.png').default%>"> -->
-                        <button class="cards__item-category btn">Природа</button>
-                        <div class="cards__item-content">
-                            <div class="cards__item-date">2 августа, 2019</div>
-                            <h3 class="cards__item-title">Национальное достояние – парки</h3>
-                            <p class="cards__item-text">В 2016 году Америка отмечала важный юбилей: сто лет назад здесь начала складываться система национальных парков – охраняемых территорий, где и сегодня каждый может приобщиться к природе.</p>
-                            <div class="cards__item-source">Лента.ру</div>
-                        </div>
-                    </div>
 
-                    <div class="cards__item">
-                        <img alt="news-image" class="cards__item-image" src="<%=require('./images/image_04.png').default%>">
-                        <!-- <img class="cards__item-label" src="<%=require('./images/Rectangle-6.png').default%>"> -->
-                        <button class="cards__delete-btn btn"><img alt="trash-image" class="cards__item-icon-trash" src="<%=require('./images/trash.png').default%>"></button>
-                        <button class="cards__item-sticker btn">Убрать из сохранённых</button>
-                        <button class="cards__item-category btn">Природа</button>
-                        <div class="cards__item-content">
-                            <div class="cards__item-date">2 августа, 2019</div>
-                            <h3 class="cards__item-title">Национальное достояние – парки</h3>
-                            <p class="cards__item-text">В 2016 году Америка отмечала важный юбилей: сто лет назад здесь начала складываться система национальных парков – охраняемых территорий, где и сегодня каждый может приобщиться к природе.</p>
-                            <div class="cards__item-source">Лента.ру</div>
-                        </div>
-                    </div>
-
-                    <div class="cards__item">
-                        <img alt="news-image" class="cards__item-image" src="<%=require('./images/image_07.png').default%>">
-                        <!-- <img class="cards__item-label" src="<%=require('./images/Rectangle-6.png').default%>"> -->
-                        <!-- <img class="cards__item-icon-trash" src="<%=require('./images/trash.png').default%>"> -->
-                        <button class="cards__delete-btn btn"><img alt="trash-image" class="cards__item-icon-trash" src="<%=require('./images/trash.png').default%>"></button>
-                        <button class="cards__item-category btn">Тайга</button>
-                        <div class="cards__item-content">
-                            <div class="cards__item-date">2 августа, 2019</div>
-                            <h3 class="cards__item-title">Национальное достояние – парки</h3>
-                            <p class="cards__item-text">В 2016 году Америка отмечала важный юбилей: сто лет назад здесь начала складываться система национальных парков – охраняемых территорий, где и сегодня каждый может приобщиться к природе.</p>
-                            <div class="cards__item-source">Лента.ру</div>
-                        </div>
-                    </div>
-                    <div class="cards__item">
-                        <img alt="news-image" class="cards__item-image" src="<%=require('./images/image_07.png').default%>">
-                        <!-- <img class="cards__item-label" src="<%=require('./images/Rectangle-6.png').default%>"> -->
-                        <!-- <img class="cards__item-icon-trash" src="<%=require('./images/trash.png').default%>"> -->
-                        <button class="cards__delete-btn btn"><img alt="trash-image" class="cards__item-icon-trash" src="<%=require('./images/trash.png').default%>"></button>
-                        <button class="cards__item-category btn">Парки</button>
-                        <div class="cards__item-content">
-                            <div class="cards__item-date">2 августа, 2019</div>
-                            <h3 class="cards__item-title">Национальное достояние – парки</h3>
-                            <p class="cards__item-text">В 2016 году Америка отмечала важный юбилей: сто лет назад здесь начала складываться система национальных парков – охраняемых территорий, где и сегодня каждый может приобщиться к природе.</p>
-                            <div class="cards__item-source">Лента.ру</div>
-                        </div>
-                    </div>
-
-                    <div class="cards__item">
-                        <img alt="news-image" class="cards__item-image" src="<%=require('./images/image_07.png').default%>">
-                        <!-- <img class="cards__item-label" src="<%=require('./images/Rectangle-6.png').default%>"> -->
-                        <!-- <img class="cards__item-icon-trash" src="<%=require('./images/trash.png').default%>"> -->
-                        <button class="cards__delete-btn btn"><img alt="trash-image" class="cards__item-icon-trash" src="<%=require('./images/trash.png').default%>"></button>
-                        <button class="cards__item-category btn">Фотография</button>
-                        <div class="cards__item-content">
-                            <div class="cards__item-date">2 августа, 2019</div>
-                            <h3 class="cards__item-title">Национальное достояние – парки</h3>
-                            <p class="cards__item-text">В 2016 году Америка отмечала важный юбилей: сто лет назад здесь начала складываться система национальных парков – охраняемых территорий, где и сегодня каждый может приобщиться к природе.</p>
-                            <div class="cards__item-source">Лента.ру</div>
-                        </div>
-                    </div>
                 </div>
 
             </section>
