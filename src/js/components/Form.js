@@ -39,6 +39,13 @@ export class Form {
 
     _validateForm(form, button) {
         button.disabled = !form.checkValidity();
+
+        if (!form.checkValidity()) {
+            return button.classList.remove('popup__button_enabled');
+        }
+        if (form.checkValidity()) {
+            return button.classList.add('popup__button_enabled');
+        }
     }
 
     _clear() {

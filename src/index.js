@@ -1,31 +1,30 @@
 import './index.css';
 
 import {
-    REGISTRATION_POPUP,
-    LOGIN_POPUP,
-    SUCCESS_POPUP,
-    REGISTRATION_FORM,
-    LOGIN_FORM,
-    REGISTRATION_LINK,
-    LOGIN_LINK,
-    REGISTRATION_BUTTON,
-    LOGIN_BUTTON,
-    // CLOSE_BUTTON,
-    NEWS_API_URL,
-    HEADER,
-    HEADER_BUTTON_AUTHORIZATION,
-    CARD_LIST,
-    SEARCH_BUTTON,
-    SEARCH_INPUT,
-    LOADER,
-    SEARCH_NOT_FOUND,
-    CARDS,
-    EMAIL_INPUT,
-    PASSWORD_INPUT,
-    NAME_INPUT,
-    SUCCESS_REGISTRATION_LINK,
+    popupRegistration,
+    popupLogin,
+    popupSuccess,
+    formRegistration,
+    formLogin,
+    linkRegistration,
+    linkLogin,
+    buttonRegistration,
+    buttonLogin,
+    isDev,
+    headerBlock,
+    buttonAuthHeader,
+    containerCards,
+    buttonSearch,
+    inputSearch,
+    loaderBlock,
+    notFoundBlock,
+    cardsBlock,
+    inputEmail,
+    inputPassword,
+    inputName,
+    linkSuccessRegistration,
     PROPS,
-    LOGOUT_BUTTON,
+    buttonLogout,
     ERROR_MESSAGES
 }
 from './js/constants/constants';
@@ -33,7 +32,6 @@ from './js/constants/constants';
 import { MainApi } from './js/api/MainApi';
 import { NewsApi } from './js/api/NewsApi';
 import { Form } from './js/components/Form';
-// import { NewsCard } from './js/components/NewsCard';
 import { NewsCardList } from './js/components/NewsCardList';
 import { Popup } from './js/components/Popup';
 import { PopupRegistration } from './js/components/PopupRegistration';
@@ -42,24 +40,26 @@ import { dateFormat } from './js/utils/dateFormat';
 import { Header } from './js/components/Header';
 
 
-const registrationPopup = new PopupRegistration(REGISTRATION_POPUP);
-const loginPopup = new Popup(LOGIN_POPUP);
-const successPopup = new PopupSuccess(SUCCESS_POPUP);
-const newsApi = new NewsApi(NEWS_API_URL);
-const cardList = new NewsCardList(CARD_LIST);
+const registrationPopup = new PopupRegistration(popupRegistration);
+const loginPopup = new Popup(popupLogin);
+const successPopup = new PopupSuccess(popupSuccess);
+const newsApi = new NewsApi(isDev);
+const cardList = new NewsCardList(containerCards);
 const mainApi = new MainApi();
-const header = new Header(HEADER);
-const loginValidator = new Form(LOGIN_POPUP, ERROR_MESSAGES);
-const signupValidator = new Form(REGISTRATION_POPUP, ERROR_MESSAGES);
+const header = new Header(headerBlock);
+const loginValidator = new Form(popupLogin, ERROR_MESSAGES);
+const signupValidator = new Form(popupRegistration, ERROR_MESSAGES);
 
 
 //listeners
 
-LOGOUT_BUTTON.addEventListener('click', () => {
+
+
+buttonLogout.addEventListener('click', () => {
     mainApi.logout()
         .then((res) => {
             // if (res.ok) {
-            window.location.reload()
+            window.location.reload();
             header.renderLoggedOut();
             PROPS.isLoggedIn = '';
             PROPS.userName = '';
@@ -72,17 +72,18 @@ LOGOUT_BUTTON.addEventListener('click', () => {
 })
 
 
-LOGIN_BUTTON.addEventListener('click', (event) => {
+buttonLogin.addEventListener('click', (event) => {
     // event.preventDefault();
-    window.location.reload()
+    // window.location.reload();
     mainApi.signin(
-            LOGIN_FORM.email.value,
-            LOGIN_FORM.password.value
+            formLogin.email.value,
+            formLogin.password.value
         )
         .then(() => {
+            window.location.reload();
             header.render(PROPS);
             // console.log(res);
-            LOGIN_FORM.reset();
+            formLogin.reset();
             loginPopup.close();
             return;
         })
@@ -91,16 +92,16 @@ LOGIN_BUTTON.addEventListener('click', (event) => {
         });
 })
 
-REGISTRATION_BUTTON.addEventListener('click', (event) => {
+buttonRegistration.addEventListener('click', (event) => {
     event.preventDefault();
     mainApi.signup(
-            EMAIL_INPUT.value,
-            PASSWORD_INPUT.value,
-            NAME_INPUT.value
+            inputEmail.value,
+            inputPassword.value,
+            inputName.value
         )
         .then((res) => {
             console.log(res);
-            REGISTRATION_FORM.reset();
+            formRegistration.reset();
             registrationPopup.close();
             successPopup.open();
             return;
@@ -110,44 +111,44 @@ REGISTRATION_BUTTON.addEventListener('click', (event) => {
         });
 });
 
-SUCCESS_REGISTRATION_LINK.addEventListener('click', () => {
+linkSuccessRegistration.addEventListener('click', () => {
     successPopup.close();
     loginPopup.open();
 })
 
-SEARCH_BUTTON.addEventListener('click', (event) => {
+buttonSearch.addEventListener('click', (event) => {
     event.preventDefault();
     const date = dateFormat();
-    CARD_LIST.textContent = '';
-    LOADER.classList.add('loader_is-active');
-    SEARCH_NOT_FOUND.classList.remove('search-not-found_is-active');
-    CARDS.classList.remove('cards_is-active');
-    newsApi.getNews(SEARCH_INPUT.value, date.startSearchDate, date.currentDate)
+    containerCards.textContent = '';
+    loaderBlock.classList.add('loader_is-active');
+    notFoundBlock.classList.remove('search-not-found_is-active');
+    cardsBlock.classList.remove('cards_is-active');
+    newsApi.getNews(inputSearch.value, date.startSearchDate, date.currentDate)
         .then((data) => {
-            LOADER.classList.remove('loader_is-active');
+            loaderBlock.classList.remove('loader_is-active');
             if (data.articles.length === 0) {
-                SEARCH_NOT_FOUND.classList.add('search-not-found_is-active');
-                CARDS.classList.remove('cards_is-active');
+                notFoundBlock.classList.add('search-not-found_is-active');
+                cardsBlock.classList.remove('cards_is-active');
                 return;
             }
             cardList.renderResults(data.articles);
-            CARDS.classList.add('cards_is-active');
+            cardsBlock.classList.add('cards_is-active');
             return;
         })
         .catch((err) => { console.log(err) })
 });
 
 
-HEADER_BUTTON_AUTHORIZATION.addEventListener('click', () => {
+buttonAuthHeader.addEventListener('click', () => {
     loginPopup.open();
 });
 
-REGISTRATION_LINK.addEventListener('click', () => {
+linkRegistration.addEventListener('click', () => {
     loginPopup.close();
     registrationPopup.open();
 });
 
-LOGIN_LINK.addEventListener('click', () => {
+linkLogin.addEventListener('click', () => {
     registrationPopup.close();
     loginPopup.open();
 });

@@ -11,6 +11,7 @@ export class PopupRegistration extends Popup {
 
     open() {
         this.popup.classList.add('popup_is-opened');
+        this.popup.querySelector('.popup__button').setAttribute('disabled', true);
     }
 
     close() {
