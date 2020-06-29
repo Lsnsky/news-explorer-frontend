@@ -2,6 +2,7 @@ export class MainApi {
     constructor() {}
     signup(email, password, name) {
         return fetch('http://localhost:3000/signup', {
+                // return fetch('https://api.news-explorer.best/signup', {
                 method: 'POST',
                 credentials: 'include',
                 headers: {
@@ -19,6 +20,8 @@ export class MainApi {
 
     signin(email, password) {
         return fetch('http://localhost:3000/signin', {
+                // return fetch('https://api.news-explorer.best/signin', {
+
                 method: 'POST',
                 credentials: 'include',
                 headers: {
@@ -39,6 +42,8 @@ export class MainApi {
 
     getUserData() {
         return fetch('http://localhost:3000/users/me', {
+                // return fetch('https://api.news-explorer.best/users/me', {
+
                 method: 'GET',
                 credentials: 'include',
                 headers: {
@@ -56,6 +61,8 @@ export class MainApi {
 
     logout() {
         return fetch('http://localhost:3000/logout', {
+                // return fetch('https://api.news-explorer.best/logout', {
+
                 method: 'DELETE',
                 credentials: 'include',
                 headers: {
@@ -74,6 +81,7 @@ export class MainApi {
 
     getArticles() {
         return fetch('http://localhost:3000/articles', {
+                // return fetch('https://api.news-explorer.best/articles', {
                 method: 'GET',
                 credentials: 'include',
                 headers: {
@@ -87,6 +95,8 @@ export class MainApi {
     }
     createArticle(article) {
         return fetch('http://localhost:3000/articles', {
+                // return fetch('https://api.news-explorer.best/articles', {
+
                 method: 'POST',
                 credentials: 'include',
                 headers: {
@@ -111,6 +121,8 @@ export class MainApi {
     }
     removeArticle(id) {
         return fetch(`http://localhost:3000/articles/${id}`, {
+                // return fetch(`https://api.news-explorer.best/articles/${id}`, {
+
                 method: 'DELETE',
                 credentials: 'include',
                 headers: {

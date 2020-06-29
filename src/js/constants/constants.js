@@ -15,6 +15,7 @@ const buttonLogin = popupLogin.querySelector('.popup__button');
 const buttonClose = document.querySelector('.popup__close');
 const buttonSearch = document.querySelector('.search__button');
 const buttonLogout = document.querySelector('.header__logout');
+const iconSaveArticle = document.querySelector('.cards__item-icon');
 
 const linkRegistration = popupLogin.querySelector('.popup__link');
 const linkLogin = popupRegistration.querySelector('.popup__link');
@@ -36,7 +37,7 @@ const NEWS_API_URL_DEV = 'http://newsapi.org/v2/everything?' +
     'pageSize=20&' +
     'apiKey=6ff509b3416d4cf18efd14bc688e163f';
 
-const NEWS_API_URL_DEPLOY = 'http://praktikum.tk/news/v2/everything?' +
+const NEWS_API_URL_DEPLOY = 'https://praktikum.tk/news/v2/everything?' +
     'sortBy=popularity&' +
     'pageSize=20&' +
     'apiKey=6ff509b3416d4cf18efd14bc688e163f';
@@ -88,5 +89,6 @@ export {
     linkSuccessRegistration,
     PROPS,
     buttonLogout,
-    ERROR_MESSAGES
+    ERROR_MESSAGES,
+    iconSaveArticle
 }

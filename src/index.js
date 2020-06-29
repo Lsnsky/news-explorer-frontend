@@ -25,7 +25,8 @@ import {
     linkSuccessRegistration,
     PROPS,
     buttonLogout,
-    ERROR_MESSAGES
+    ERROR_MESSAGES,
+    iconSaveArticle
 }
 from './js/constants/constants';
 
@@ -47,13 +48,19 @@ const newsApi = new NewsApi(isDev);
 const cardList = new NewsCardList(containerCards);
 const mainApi = new MainApi();
 const header = new Header(headerBlock);
+
+//валидация форм
+
 const loginValidator = new Form(popupLogin, ERROR_MESSAGES);
 const signupValidator = new Form(popupRegistration, ERROR_MESSAGES);
 
 
-//listeners
+//слушатели
 
-
+// iconSaveArticle.addEventListener('click', () => {
+//     mainApi.createArticle()
+//         .then
+// });
 
 buttonLogout.addEventListener('click', () => {
     mainApi.logout()
@@ -166,3 +173,7 @@ mainApi.getUserData()
     .catch((err) => {
         console.log(err)
     });
+
+// document.addEventListener("click", function(e) {
+//     console.log(e.target);
+// });
