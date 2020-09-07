@@ -1,0 +1,23 @@
+.header__title {
+    font-family: Roboto Slab;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 24px;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: #FFFFFF;
+    z-index: 100;
+}
+
+.header__title_black {
+    color: #1A1B22;
+    z-index: 100;
+}
+
+
+/* @media screen and (max-width:750px) {
+    .header__title,
+    .header__title_black {}
+} */

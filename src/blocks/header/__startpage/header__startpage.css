@@ -1,0 +1,26 @@
+.header__startpage {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 24px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: #FFFFFF;
+    text-decoration: none;
+    margin: 0 32px 0 0;
+    height: 80px;
+}
+
+.header__startpage_black {
+    color: #1A1B22;
+}
+
+@media screen and (max-width:750px) {
+    .header__startpage,
+    .header__startpage_black {
+        margin-left: 16px;
+        color: #FFFFFF;
+    }
+}

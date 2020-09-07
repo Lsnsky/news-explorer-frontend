@@ -1,0 +1,17 @@
+.articles-info__title {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 24px;
+    color: rgba(26, 27, 34, 0.5);
+    margin: 0;
+    padding: 40px 0 0 0;
+}
+
+@media screen and (max-width:500px) {
+    .articles-info__title {
+        font-size: 12px;
+        line-height: 24px;
+    }
+}

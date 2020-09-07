@@ -1,0 +1,35 @@
+@import url(./__title/articles-info__title.css);
+@import url(./__description/articles-info__description.css);
+@import url(./__keywords/articles-info__keywords.css);
+@import url(./__keywords/_bold/articles-info__keywords_bold.css);
+.articles-info {
+    max-width: 1440px;
+    padding: 0 104px;
+    /* height: 294px; */
+    margin: 0 auto;
+    background: #FFFFFF;
+}
+
+@media screen and (max-width:1280px) {
+    .articles-info {
+        padding: 0 80px;
+    }
+}
+
+@media screen and (max-width:1024px) {
+    .articles-info {
+        padding: 0 60px;
+    }
+}
+
+@media screen and (max-width:768px) {
+    .articles-info {
+        padding: 0 40px;
+    }
+}
+
+@media screen and (max-width:500px) {
+    .articles-info {
+        padding: 0 16px;
+    }
+}

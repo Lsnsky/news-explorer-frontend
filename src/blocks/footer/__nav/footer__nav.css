@@ -1,0 +1,12 @@
+.footer__nav {
+    margin: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+@media screen and (max-width:730px) {
+    .footer__nav {
+        margin: 40px auto 40px;
+    }
+}

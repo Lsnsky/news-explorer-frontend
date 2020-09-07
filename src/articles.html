@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="description" content="Дипломная работа">
+    <meta name="author" content="Игорь Лисянский">
+    <link rel="shortcut icon" href="/src/images/Rectangle-2.png" type="image/x-icon">
+    <link rel="stylesheet" href="<%=htmlWebpackPlugin.files.css%>">
+    <title>News-explorer</title>
+</head>
+
+<body>
+    <div class="root">
+
+        <header class="header header_white">
+            <label class="header__label" for="toggle"></label>
+            <input type="checkbox" class="header__checkbox" id="toggle">
+            <span class="header__mobile-icon header__mobile-icon_black"></span>
+            <a href="./index.html" class="header__title header__title_black">NewsExplorer</a>
+            <nav class="header__nav">
+                <a class="header__startpage link header_active header__startpage_black" href="./index.html">Главная</a>
+                <a class="header__articles header__articles_black link " href="./articles.html">Сохранённые статьи</a>
+                <div class="header__button header__button_black btn">Грета</div>
+                <img class="header__logout" src="<%=require('./images/logout.png').default%>">
+            </nav>
+        </header>
+
+        <main>
+            <section class="articles-info">
+                <h2 class="articles-info__title">Сохранённые статьи</h2>
+                <h3 class="articles-info__description">Грета, у вас 5<br> сохранённых статей</h3>
+                <p class="articles-info__keywords">По ключевым словам:<span class="articles-info__keywords_bold"> Природа, Тайга</span> и <span class="articles-info__keywords_bold"> 2 другим</span></p>
+            </section>
+
+            <section class="cards">
+
+                <div class="cards__container">
+
+
+                </div>
+
+            </section>
+        </main>
+        <footer class="footer">
+            <div class="footer__author">&copy; 2020 Supersite, Powered by News API</div>
+            <nav class="footer__nav">
+                <div class="footer__menu">
+                    <a class="footer__link link" href="./index.html">Главная</a>
+                    <a class="footer__link link" href="https://praktikum.yandex.ru/" target="_blank">Яндекс.Практикум</a>
+                </div>
+                <div class="footer__social">
+                    <img class="footer__social-icon" src="<%=require('./images/github.png').default%>" alt=" github icon ">
+                    <img class="footer__social-icon" src="<%=require('./images/fb.png').default%>" alt="facebook icon ">
+                </div>
+            </nav>
+        </footer>
+
+    </div>
+    <script src="<%=htmlWebpackPlugin.files.js%>"></script>
+</body>
+
+</html>
